@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>ДСК | Столица</title>
+</head>
+<body>
+    <header class="header container">
+        <div class="header__block">
+            <a href="#" class="logo"></a>
+            <form action="" method="post" class="search">
+                <input type="text" placeholder="Поиск по каталогу" class="search__inp">
+                <button class="search__btn"></button>
+            </form>
+            <button class="burger"></button>
+        </div>
+        <ul class="path">
+            <li class="path__item">Главная</li>
+            <li class="path__item">Каталог товаров</li>
+            <li class="path__item">Частное домостроение</li>
+            <li class="path__item">Плиты перекрытия</li>
+            <li class="path__item">Плиты ПК</li>
+            <li class="path__item">Пк 63-12-8</li>
+        </ul>
+    </header>
+    <section class="product">
+        <div class="container">
+            <h2 class="product__title">ПК 63-12-8</h2>
+            <div class="stars">
+                <div class="stars__item stars__item_full"></div>
+                <div class="stars__item stars__item_full"></div>
+                <div class="stars__item stars__item_full"></div>
+                <div class="stars__item stars__item_half"></div>
+                <div class="stars__item stars__item_empty"></div>
+            </div>
+        </div>
+        <div class="product__description">
+            <div class="container">
+                <div class="swiper description">
+                    <div class="swiper-wrapper">    
+                        <div class="swiper-slide description__item description__item_active">ВСЕ О ТОВАРЕ</div>
+                        <div class="swiper-slide description__item">ХАРАКТЕРИСТИКИ</div>
+                        <div class="swiper-slide description__item">ОБЗОР</div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".description", {
+                    slidesPerView: 'auto',
+                    spaceBetween: 35,
+                    freeMode: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="container">
+            <div class="swiper img">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img__slide"></div>
+                    <div class="swiper-slide img__slide"></div>
+                    <div class="swiper-slide img__slide"></div>
+                    <div class="swiper-slide img__slide"></div>
+                    <div class="swiper-slide img__slide"></div>
+                    <div class="swiper-slide img__slide"></div>
+                </div>
+                <div class="swiper-pagination img__pagination"></div>
+            </div>
+            <h3 class="product__subtitle">ХАРАКТЕРИСТИКИ</h3>
+            <ul class="char">
+                <li class="char__item">Наименование: <span>Плиты ПК</span></li>
+                <li class="char__item">Завод-производитель: <span>Москва и МО</span></li>
+                <li class="char__item">Техниеские условия: <span>ГОСТ 9561-91</span></li>
+                <li class="char__item">Длина, мм: <span>6300</span></li>
+                <li class="char__item">Ширина, мм: <span>1200</span></li>
+                <li class="char__item">Высота, мм: <span>220</span></li>
+                <li class="char__item">Расчетная нагрузка, кг/м<sup>2</sup>: <span>800</span></li>
+                <li class="char__item">Вес 1 шт., т: <span>1,755</span></li>
+            </ul>
+        </div>
+    </section>
+    <section class="buy container">
+        <p class="buy__price">484,00 &#x20bd;/шт</p>
+        <p class="buy__size">154,88 &#x20bd;/м<sup>2</sup></p>
+        <p class="buy__number"><span>Артикул:</span> 0543600</p>
+        <form action="" method="post" class="buy__form tiles">
+            <div class="buy__count tiles__item">
+                <!-- <input type="text"> -->
+                <input type="text" placeholder="10 шт.">
+                <button class="buy__minus"></button>
+                <button class="buy__plus"></button>
+            </div>
+            <button type="submit" class="buy__submit tiles__item"><span>В корзину</span></button>
+        </form>
+        <div class="tiles">
+            <button class="buy__like tiles__item"><span>В избранное</span></button>
+            <a href="tel:+79991985696" class="buy__call tiles__item"><span>Позвонить</span></a>
+        </div>
+        <div class="social">
+            <p class="social__text">Также для вашего удобства мы&nbsp;доступны&nbsp;в&nbsp;мессенджерах</p>
+            <a href="#" class="social__item whatsapp"></a>
+            <a href="#" class="social__item viber"></a>
+            <a href="#" class="social__item telegram"></a>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".description", {
+    slidesPerView: 'auto',
+    spaceBetween: 35,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".img", {
+        spaceBetween: 35,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+</html>
