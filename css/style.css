@@ -357,6 +357,11 @@ p {
     background-image: url(../img/shopping_cart.png);
 }
 
+.buy__like {
+    color: #666666;
+    background-color: #F6F6F6;
+}
+
 .buy__like span {
     padding-left: 27px;
 }
